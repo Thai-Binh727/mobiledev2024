@@ -4,9 +4,240 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white"
     tools:context=".ForecastFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD4EBF2"
+        android:orientation="vertical">
 
+        <!-- Monday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:text="Monday"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:src="@drawable/weather_icon_2">
+            </ImageView>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="30C - 33C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!-- Tuesday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:text="Tuesday"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:src="@drawable/rain">
+            </ImageView>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="24C - 27C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!-- Wednesday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:text="Wednesday"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:src="@drawable/thunderstorm">
+            </ImageView>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="21C - 25C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!-- Thursday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:text="Thursday"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:src="@drawable/thunderstorm">
+            </ImageView>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="20C - 22C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!-- Friday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:text="Friday"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:src="@drawable/snow">
+            </ImageView>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="5C - 7C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!-- Saturday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:text="Saturday"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:src="@drawable/wind">
+            </ImageView>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="14C - 18C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!-- Sunday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:text="Sunday"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:src="@drawable/cloud">
+            </ImageView>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="20C - 23C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
 </FrameLayout>
