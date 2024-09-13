@@ -8,16 +8,34 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class WeatherActivity extends AppCompatActivity {
-    // Practical 1 + 2
+
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.i("onCreate", "Created");
-
-        // Practical 3
         setContentView(R.layout.activity_weather);
+
+        tabLayout = findViewById(R.id.tabLayout);
+        viewPager = findViewById(R.id.viewPager);
+
+        tabLayout.setupWithViewPager(viewPager);
+
+        WeatherAdapter adapter = new WeatherAdapter(getSupportFragmentManager())
+        adapter.addFragment(new WeatherAndForecastFragment(), "Ha Noi");
+        adapter.addFragment(new WeatherAndForecastFragment(), "Paris");
+        adapter.addFragment(new WeatherAndForecastFragment(), "Moscow");
+        viewPager.setAdapter(adapter);
+    }
+
 //        setContentView(R.layout.fragment_forecast);
 //        // Create a new Fragment to be placed in the activity layout
 //        ForecastFragment firstFragment = new ForecastFragment();
@@ -25,35 +43,35 @@ public class WeatherActivity extends AppCompatActivity {
 //        getSupportFragmentManager().beginTransaction()
 //                .add(R.id.main, firstFragment)
 //                .commit();
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.i("onStart", "Start");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.i("onResume", "Resume");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.i("onPause", "Pause");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.i("onStop", "Stop");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.i("onDestroy", "Destroy");
-    }
+//    }
+//
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        Log.i("onStart", "Start");
+//    }
+//
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        Log.i("onResume", "Resume");
+//    }
+//
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        Log.i("onPause", "Pause");
+//    }
+//
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        Log.i("onStop", "Stop");
+//    }
+//
+//    @Override
+//    protected void onDestroy() {
+//        super.onDestroy();
+//        Log.i("onDestroy", "Destroy");
+//    }
 }
