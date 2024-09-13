@@ -29,7 +29,8 @@ public class WeatherActivity extends AppCompatActivity {
 
         tabLayout.setupWithViewPager(viewPager);
 
-        WeatherAdapter adapter = new WeatherAdapter(getSupportFragmentManager())
+        WeatherAdapter adapter = new WeatherAdapter(getSupportFragmentManager(),
+                                                    FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         adapter.addFragment(new WeatherAndForecastFragment(), "Ha Noi");
         adapter.addFragment(new WeatherAndForecastFragment(), "Paris");
         adapter.addFragment(new WeatherAndForecastFragment(), "Moscow");
