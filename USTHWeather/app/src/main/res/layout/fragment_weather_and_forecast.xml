@@ -14,7 +14,7 @@
         android:layout_height="200dp"
         android:layout_margin="10dp"
         android:orientation="horizontal"
-        android:background="#FF90EE90">
+        android:background="@color/light_green">
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -65,7 +65,7 @@
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
-                android:text="Monday"
+                android:text="@string/mon"
                 android:gravity="center"
                 android:layout_marginEnd="20dp"
                 android:textColor="@color/black"
@@ -99,7 +99,7 @@
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
-                android:text="Tuesday"
+                android:text="@string/tue"
                 android:gravity="center"
                 android:layout_marginEnd="20dp"
                 android:textColor="@color/black"
@@ -133,7 +133,7 @@
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
-                android:text="Wednesday"
+                android:text="@string/wed"
                 android:gravity="center"
                 android:layout_marginEnd="20dp"
                 android:textColor="@color/black"
@@ -167,7 +167,7 @@
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
-                android:text="Thursday"
+                android:text="@string/thu"
                 android:gravity="center"
                 android:layout_marginEnd="20dp"
                 android:textColor="@color/black"
@@ -201,7 +201,7 @@
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
-                android:text="Friday"
+                android:text="@string/fri"
                 android:gravity="center"
                 android:layout_marginEnd="20dp"
                 android:textColor="@color/black"
@@ -235,7 +235,7 @@
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
-                android:text="Saturday"
+                android:text="@string/sat"
                 android:gravity="center"
                 android:layout_marginEnd="20dp"
                 android:textColor="@color/black"
@@ -269,7 +269,7 @@
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
-                android:text="Sunday"
+                android:text="@string/sun"
                 android:gravity="center"
                 android:layout_marginEnd="20dp"
                 android:textColor="@color/black"
